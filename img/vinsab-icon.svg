@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="64" height="64">
+  <defs>
+    <linearGradient id="shieldGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#e74c3c;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#c0392b;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  
+  <!-- Background Circle -->
+  <circle cx="64" cy="64" r="60" fill="#2c3e50" filter="url(#shadow)"/>
+  
+  <!-- Shield Shape (Selective Protection) -->
+  <path d="M 64 25 L 90 35 L 90 60 Q 90 85 64 100 Q 38 85 38 60 L 38 35 Z" 
+        fill="url(#shieldGrad)" 
+        stroke="#fff" 
+        stroke-width="2"/>
+  
+  <!-- V Letter (stylized) -->
+  <path d="M 50 45 L 64 75 L 78 45" 
+        fill="none" 
+        stroke="#fff" 
+        stroke-width="5" 
+        stroke-linecap="round" 
+        stroke-linejoin="round"/>
+  
+  <!-- Targeting Crosshair (Selective System) -->
+  <circle cx="64" cy="60" r="18" fill="none" stroke="#fff" stroke-width="2" opacity="0.7"/>
+  <circle cx="64" cy="60" r="12" fill="none" stroke="#fff" stroke-width="1.5" opacity="0.5"/>
+  
+  <!-- Ban Symbol (Punishment) -->
+  <g opacity="0.9">
+    <circle cx="64" cy="60" r="24" fill="none" stroke="#fff" stroke-width="3"/>
+    <line x1="48" y1="48" x2="80" y2="72" stroke="#fff" stroke-width="3" stroke-linecap="round"/>
+  </g>
+  
+  <!-- Small "VS" text at bottom -->
+  <text x="64" y="95" 
+        font-family="Arial, sans-serif" 
+        font-size="10" 
+        font-weight="bold" 
+        fill="#fff" 
+        text-anchor="middle">VINSAB</text>
+</svg>
